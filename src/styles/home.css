@@ -1,0 +1,111 @@
+#Home {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    background-size: 500px;
+    background-image: url('../images/bg.png');
+    place-items: center;
+    background-position: center;
+    overflow: hidden;
+    transition: margin-left 0.5s;
+}
+
+#Home.active{
+    margin-left: -180px;
+}
+
+#Home .container {
+    display: grid;
+    max-width: 360px;
+    width: 100%;
+    padding: 0 10px;
+    place-items: center;
+}
+
+#Home .container .img {
+    width: 300px;
+}
+
+#Home .container .img img {
+    place-items: center;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+#Home .text-btns {
+    width: 100%;
+    text-align: center;
+}
+
+#Home .text-btns p {
+    color: #363636;
+    font-size: 0.9rem;
+    margin: 10px 0;
+}
+
+#Home .text-btns .btns a {
+    display: inline-block;
+    width: 100%;
+    height: 42px;
+    line-height: 42px;
+    border: 1px solid #7e7e7e;
+    border-radius: 20px;
+    margin: 7px 0;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: 2s ease;
+    color: #111;
+}
+
+#Home .text-btns .btns .login-btn {
+    background-color: #e8505b;
+    color: #fff;
+    border: none;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+#Home .text-btns .btns a:hover {
+    background-color: #111;
+    color: #fff;
+    border: none;
+}
+
+#Home .text-btns span {
+    display: inline-block;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #222;
+    font-size: 0.9rem;
+}
+
+#Home .text-btns .via-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+#Home .text-btns .via-social a{
+    height: 33px;
+    width: 33px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 0.8rem;
+}
+
+#Home .text-btns .via-social a:nth-child(1){
+    background-color: #155ee6;
+}
+#Home .text-btns .via-social a:nth-child(2){
+    background-color: #eb1515;
+}
+#Home .text-btns .via-social a:nth-child(3){
+    background-color: #197cfd;
+}
